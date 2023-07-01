@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-client/pom.xml" />
         <option value="$PROJECT_DIR$/feign-client/pom.xml" />
+        <option value="$PROJECT_DIR$/google-sign-in/pom.xml" />
+        <option value="$PROJECT_DIR$/LoginService/pom.xml" />
       </list>
     </option>
   </component>

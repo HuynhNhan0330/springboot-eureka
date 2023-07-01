@@ -6,17 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eureka-client" />
         <module name="feign-client" />
+        <module name="eureka-client" />
         <module name="eureka-server" />
+        <module name="LoginService" />
+        <module name="google-sign-in" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="LoginService" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="feign-client" options="-parameters" />
+      <module name="google-sign-in" options="-parameters" />
     </option>
   </component>
 </project>

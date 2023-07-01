@@ -26,7 +26,9 @@ public class EurekaClientApplication implements homeController {
 
 	@Override
 	public String getHome() {
-		return String.format(
-				"Hello from '%s'!", eurekaClient.getApplication(appName).getName());
+		String nameService = eurekaClient.getApplication(appName).getName();
+
+		return nameService != null ? String.format(
+				"Hello from '%s'!", nameService) : "Get name application failed";
 	}
 }
