@@ -11,8 +11,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @SpringBootApplication
-@EnableFeignClients
 @Controller
+@EnableFeignClients
 public class FeignClientApplication {
 
 	@Autowired
@@ -23,7 +23,7 @@ public class FeignClientApplication {
 	}
 
 	@RequestMapping("/home")
-	public String greeting(Model model) {
+	public String getHome(Model model) {
 		model.addAttribute("nameHome", homeClient.getHome());
 		return "home";
 	}

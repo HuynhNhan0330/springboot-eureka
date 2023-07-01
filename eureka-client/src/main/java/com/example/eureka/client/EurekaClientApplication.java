@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController
 @EnableDiscoveryClient
+@RestController
 public class EurekaClientApplication implements homeController {
 	@Autowired
 	@Lazy
