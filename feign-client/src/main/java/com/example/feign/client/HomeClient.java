@@ -8,3 +8,4 @@ public interface HomeClient {
     @RequestMapping("/home")
     String getHome();
 }
+

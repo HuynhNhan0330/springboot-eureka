@@ -10,9 +10,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @SpringBootApplication
-@Controller
 @EnableFeignClients
 @EnableDiscoveryClient
+@Controller
 public class FeignClientApplication {
 
 	@Autowired
